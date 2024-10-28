@@ -1,0 +1,271 @@
+
+.mainnav{
+  display: flex;
+  background-color: rgb(22, 11, 83);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  border-bottom: 4px solid #401E63;
+
+}
+.mainnav>.menu>li{
+  list-style: none;
+  margin: 0 3px;
+  padding: 10px 10px;
+}
+.mainnav>.menu>li>a{
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+  font-weight: bold;
+  font-size:15px;
+}
+.mainnav>.menu>li>a:hover{
+background-color: rgb(3, 3, 19);
+color: red;
+border-radius: 5px;
+}
+.mainnav>.menu{
+display: flex;
+margin-right: 80px;
+}
+.mainnav>.title{
+ margin-left: 100px;
+ font-size: 20px;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.mainnav>.menu>li>.drop{
+  position: absolute;
+  background-color: rgb(22, 11, 83);
+ opacity: 0;
+ visibility: hidden;
+  margin-top:19px ;
+  text-align: center;
+  width: 158px;
+  transition: 0.5s;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.mainnav>.menu>li:hover .drop{
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+
+}
+.mainnav>.menu>li>.drop>li{
+ list-style: none;
+ margin: 0 10px;
+
+ padding: 11px 0px;
+}
+.mainnav>.menu>li>.drop>li>a{
+ text-decoration: none;
+ color: white;
+ padding: 10px 46px;
+ border-bottom: 2px solid white;
+ 
+}
+.mainnav>.menu>li>.drop>li:last-child a{
+ border: none;
+}
+.mainnav>.menu>li>.drop>li:first-child a{
+  border-top:2px solid white;
+ }
+.mainnav>.menu>li>.drop>li>a:hover{
+  background-color: rgb(3, 3, 19);
+color: red;
+border-radius: 5px;
+}
+  /* hero area start */
+  .hero_area{
+    background-image: url(website\ banner.jpg);
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+  .hero_area>.icon{
+    background-color: green;
+    font-size: 25px;
+    padding: 6px;
+    /* height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    color:red;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: -10px;
+  }
+  .hero_area>input{
+   width: 400px;
+   border-radius: 3px;
+   border: none;
+   font-size: 20px;
+   padding-left: 20px;
+   padding-right: 35px;
+  
+   
+  }
+  /* mainpart css start */
+  
+  
+    
+   
+   
+   .ancor a{
+    margin:0  10px;
+    text-decoration: none;
+    background-color: antiquewhite;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid rgb(122, 113, 113);
+   }
+   .ancor a:hover{
+    background-color: rgb(26, 151, 109);
+    color: white;
+    
+   } .main_section{
+    background-color: rgb(22, 11, 83);
+   }
+   .main_container{
+    width: 700px;
+    margin: auto;
+    padding-bottom: 50px;
+   
+   }
+   .main_container>.number{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 30px 0;
+    color: rgb(12, 168, 116);
+   }
+   .main_container>.number>.video>h3{
+    font-size: 20px;
+   }
+   .main_container>.number>.page>h4>span{
+    background-color: aliceblue;
+    padding: 3px;
+    margin: 0 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: black;
+   }
+   .maingalary{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap:20px ;
+   }
+   .galary img{
+    width: 100%;
+    height: 150px;
+    transition: 0.5s;
+    border: 2px solid gray;
+   }
+   .galary:hover img{
+    transform: scale(1.1);
+    border-radius: 20px;
+   }
+   
+   .date{
+    display: flex;
+    justify-content:space-between ;
+    font-size: 10px;
+    color: gray;
+    margin-top: 10px;
+   }
+   .previous {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   
+   }
+   .previous h3 a{
+    background-color: rgb(26, 151, 109);
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+   }
+   .previous h3 a i{
+    margin-right: 3px;
+    margin-left: 3px;
+   }
+   .previous h3 a:hover{
+    background-color: rgb(26, 151, 109);
+   }
+   /* mainprt css end */
+   footer{
+    background-color: rgb(100, 9, 77);
+   }
+   .footermain{
+    width: 600px;
+       
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    color:antiquewhite;
+    grid-gap: 30px;
+   
+   }
+   .footermain .foter1 h2{
+    padding: 20px 0;
+    font-size: 20px;
+   }
+   .footermain> .foter1> .pra{
+    font-size: 13px;
+    margin-bottom: 30px;
+   }
+   .footermain .foter1 span{
+    font-size: 13px;
+    color: rgb(235, 225, 225);
+
+   }
+   .footermain .foter1 .pra2 p{
+    margin: 10px 0;
+    font-size: 13px;
+
+   }
+   .pra{
+    color: rgb(235, 225, 225);
+   }
+   .pra2{
+    color: rgb(235, 225, 225);
+    cursor: pointer;
+   }
+   .footericon{
+   
+   }
+   .footericon i{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+   }
+   .footericon i:hover{
+    color: blueviolet;
+   }
+   .pra3>p{
+    margin: 10px 0;
+    font-size: 13px;
+    color: rgb(235, 225, 225);
+   }
+   .pra3>p:nth-child(3){
+   margin-top: 50px;
+    font-size: 13px;
+   }
